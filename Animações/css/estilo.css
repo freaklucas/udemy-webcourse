@@ -1,0 +1,30 @@
+/* Sempre lembrar de usar prefixos
+a depender do browser a ser utillizado */
+
+@keyframes animacao-caixa {
+    from {
+        background: grey;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: yellow;
+        border-radius: 500px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /* animation-name: animacao-caixa;
+    animation-duration: 5s;
+    text-align: center;
+    animation-delay: 0s;
+    animation-iteration-count: 4; */
+    animation: animacao-caixa 5s 0s 2 alternate;
+}
