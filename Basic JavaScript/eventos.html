@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>JavaScript - Eventos</title>
+    <script>
+        function acao1() {
+            alert('Evento disparado')
+        }
+
+        function acao2() {
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+
+        function acao3() {
+            console.log('você está dando foco no formulário')
+        }
+
+        function acao4() {
+            console.log('você perdeu o foco no formulário')
+        }
+    </script>
+</head>
+
+
+<body onresize="console.log('Evento acionado ao redimensionar a Janela')">
+    <h3>Eventos de mouse html em js:</h3>
+    <h2> Evento de click único</h2>
+    <div onclick="acao()" style="background : grey; height:  150px; width = 130px;"></div>
+    <hr>
+    <!-- <h2> Evento de click duplo</h2>
+    <div ondblclick="acao()" style="background : grey; height:  150px; width = 130px;"></div>
+    <hr>
+    <h2>Evento ao soltar o click do mouse</h2>
+    <div onmouseup="acao()" style="background : grey; height:  150px; width = 130px;"></div>
+    <hr>
+    <h2> Evento ao passar o mouse em cima do elemento</h2>
+    <div onmouseover="acao()" style="background : grey; height:  150px; width = 130px;"></div>
+    <hr>
+    <h2> Evento ao mouse sair do elemento</h2>
+    <div onmouseout="acao()" style="background : grey; height:  150px; width = 130px;"></div> -->-->
+
+    <!-- 
+    <h3> Intercalação dos eventos </h3>
+    <div onclick="acao1()" onmouseout="acao2()" style="background : yellow; height:  150px; width = 130px;"></div> -->
+
+    <hr>
+
+    <h3>Eventos de formulário:</h3>
+
+    <h2>Evento de foco</h2>
+    <input onfocus="acao3()" onblur="acao4()" type="text">
+
+    <select onchange="console.log('Estado modificado')">
+        <option>---Selecione---</option>
+        <option value ="1">---PRIMEIRA OPCAO---</option>
+        <option value = "2">---SEGUNDA OPCAO---</option>
+
+    
+    </select>
+
+</body>
+
+</html>
