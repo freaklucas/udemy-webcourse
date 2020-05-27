@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+        //var lista_convidados = ['Jose', 'Maria', ' joao']
+        var lista_funcionarios = ['Viviane', 'Rosa', 'Miguel', 'Lucas', 'Fernanda']
+        console.log(lista_funcionarios)
+
+
+        lista_funcionarios.forEach(function(valor, indice, array) {
+
+            console.log('indice ' + indice + ' |  valor ' + valor)
+
+            if (valor === 'Lucas') {
+                array[indice] = 'New Name hehe'
+            }
+            console.log(array)
+        })
+    </script>
+
+</head>
+
+<body>
+    <h4>Array - Método *for it*</h4>
+
+
+</body>
+
+</html>
