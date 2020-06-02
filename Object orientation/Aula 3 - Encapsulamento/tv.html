@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<title>Orientação a objetos</title>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"></script>
+<script>
+    class Tv {
+        constructor() {
+            this._relacaoCanais = Array(2, 4, 5, 7, 10)
+            this._canalAtivo = 5
+            this._voume = 5
+        }
+        get canalAtivo() {
+            return this._canalAtivo
+        }
+
+        set canalAtivo(canal) {
+            let x = this._relacaoCanais.indexOf(canal)
+            console.log(x)
+            this._canalAtivo = canal
+        }
+    }
+
+    let tv = new Tv()
+
+    tv.canalAtivo = 10
+    console.log(tv.canalAtivo)
+</script>
+
+<body>
+</body>
+<h4>Basic in class</h4>
+
+</html>

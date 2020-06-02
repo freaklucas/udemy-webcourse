@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<title>Orientação a objetos</title>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"></script>
+<script>
+    class ContaBancaria {
+
+        construtor() {
+
+            this.agencia = 1098
+            this.numeroConta = 12345678
+            this.saldo = 20
+            this.limite = 600
+        }
+
+        depositar(valorDeposito) {
+            this.saldo = valorDeposito
+        }
+
+        sacar(valorSaque) {
+            this.saldo -= valorSaque
+        }
+
+        consultarSaldo() {
+            return this.saldo
+        }
+    }
+
+    let operador = new ContaBancaria()
+    let consulta = new ContaBancaria()
+
+    console.log(operador.consultarSaldo())
+    operador.depositar(400)
+    console.log(operador.consultarSaldo())
+
+    operador.sacar(400)
+    console.log(operador.consultarSaldo())
+</script>
+
+<body>
+</body>
+<h4>Basic in class</h4>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<title>Orientação a objetos</title>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel"></script>
+<script>
+    class Cadeira {
+        constructor(quantidadePernas, giratoria, cor) {
+
+            this.quantidadePernas = quantidadePernas
+            this.giratoria = giratoria
+            this.cor = cor
+        }
+
+        girarCadeira() {
+
+            if (this.giratoria === true) {
+                console.log('girou')
+            } else {
+                console.log('cadeira n giratoria')
+            }
+        }
+    }
+
+    // let cadeira = new Cadeira(4, false, 'azul')
+    let cadeiras = Array()
+
+    cadeiras.push(new Cadeira(4, false, 'amarelo'))
+
+    console.log(cadeiras)
+
+    // cadeira.girarCadeira()
+</script>
+
+<body>
+</body>
+<h4>Basic in class</h4>
+
+</html>
