@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        class Produto {
+            constructor(descricao, preco) {
+                this.descricao = descricao
+                this.preco = preco
+            }
+            verDescricao() {
+                console.log(`${this.descricao}por apenas ${this.preco} `)
+            }
+        }
+        // cria se a classse e instancio o objeto com base na classe na notacao de classe
+        let produto = new Produto('Notebook ', 2200)
+        produto.verDescricao()
+            // NOTACAO DE OBJETO LITERAL (OU ESTÁTICO)
+        let produtoLiteral = {
+            descricao: 'geladeira',
+            preco: 1800,
+            verDescricao: function() {
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+                    // descrição e preço do contexto do objeto(E NÃO DE UMA FUNCAO)
+            }
+        }
+        produtoLiteral.verDescricao()
+    </script>
+</head>
+
+<body>
+    <h4>Objeto Literal</h4>
+</body>
+
+</html>
