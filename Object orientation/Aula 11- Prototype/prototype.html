@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        // aviao, atributos: cor e modelo
+        let a1 = {
+            cor: 'Branco',
+            modelo: 'Airus a300',
+            levantarVoo: function() {
+                console.log('Levantar voo')
+            }
+        }
+        let AviaoF = function() {
+            this.cor = 'azul',
+                this.modelo = 'Boing',
+                levantarVoo = function() {
+                    console.log('Levantar voo ')
+                }
+        }
+
+        let a2 = new AviaoF()
+
+        class AviaoC {
+            constructor() {
+                this.cor = 'vermelho',
+                    this.modelo = 'Embraer'
+            }
+            levantarVoo() {
+                console.log('Levantar voo')
+            }
+        }
+
+        let a3 = new AviaoC()
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
+    </script>
+</head>
+
+<body>
+    <h4>Criação Dinâmica</h4>
+</body>
+
+</html>
