@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        // operador de desestruturação - tira valores de estruturas
+        // for array
+        // let arr = [10, 20, 30, 40]
+
+        // function teste([a, b]) {
+        //     console.log(a, b)
+        // }
+
+        // teste(arr)
+
+        // objeto : 
+
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({
+            a: x,
+            b,
+            z = 10
+        }) {
+            console.log(x, b, z)
+        }
+        teste(obj)
+    </script>
+</head>
+
+<body>
+    <h4>Criação Dinâmica</h4>
+</body>
+
+</html>

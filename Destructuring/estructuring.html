@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        // operador de desestruturação - tira valores de estruturas
+        // for arrays
+
+        let frutas = ['abacaxi', 'uva', 'pera', 'maca']
+
+        let [a, b = 'abacate', c, d, e = 'Banana'] = frutas
+        let coisas = [
+            ['Abacaxi', 'Uva', 'Pera', 'Mamão'],
+            ['Jose', 'Maria']
+        ]
+        let [, [n2]] = coisas
+        console.log(n2)
+    </script>
+</head>
+
+<body>
+    <h4>Criação Dinâmica</h4>
+</body>
+
+</html>

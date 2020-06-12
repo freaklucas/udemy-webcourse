@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        // operador de desestruturação - tira valores de estruturas
+        // Usando destructuring com operador rest
+
+        // let arr = [10, 20, 30, 40]
+        // let [a, ...resto_do_array] = arr
+        // ...variavel === operador rest
+        // console.log(a)
+        // console.log(resto_do_array)
+        // destruct
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 50,
+            d: 70
+        }
+
+        let {
+            a,
+            ...z
+        } = obj
+        // ... === é um operador rest pois junta todos os elementos dentro de um único objeto
+        console.log(a)
+        console.log(z)
+    </script>
+</head>
+
+<body>
+    <h4>Criação Dinâmica</h4>
+</body>
+
+</html>

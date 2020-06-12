@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+    <script>
+        // operador de desestruturação - tira valores de estruturas
+        // for objetos
+        // objeto produto
+        let produto = {
+                descricao: 'notebook',
+                preco: 1200,
+                detalhes: {
+                    // composicao
+                    fabricante: 'dell',
+                    modelo: 'nitro'
+                }
+            }
+            // array = []
+            // objetos - > {}
+        let {
+            descricao,
+            preco
+        } = produto
+        console.log(descricao, produto, desconto)
+            // realizando uma desestruturação do objeto produto
+
+
+        // Desestruturando de forma específfica:
+        // let {
+        //     detalhes: {
+        //         fabricante,
+        //         modelo
+        //     }
+        // } = produto
+        // console.log(fabricante, modelo)
+    </script>
+</head>
+
+<body>
+    <h4>Criação Dinâmica</h4>
+</body>
+
+</html>
