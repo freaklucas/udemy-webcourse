@@ -11,4 +11,5 @@ Progressão de conteúdos cursados:
  6) JavaScript- Aplicações com Lógica de Programação
  7) JavaScript Orientado a Objetos
  8) PHP
+ &nbsp;
  Até esta etapa de estudo, foram desenvolvidos 9 Projetos, sendo estes:
