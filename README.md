@@ -10,6 +10,9 @@ Progressão de conteúdos cursados:
  5) Bootstrap 4 e Recursos Responsivos
  6) JavaScript- Aplicações com Lógica de Programação
  7) JavaScript Orientado a Objetos
- 8) PHP
+ 8) PHP com PDO
+ 9) Banco de dados mysql
+ 10) Ajax
+ 11) Jquery
+ 12) Padrão de Arquitetura MVC com PHP
  &nbsp;
- Até esta etapa de estudo, foram desenvolvidos 9 Projetos, sendo estes:
