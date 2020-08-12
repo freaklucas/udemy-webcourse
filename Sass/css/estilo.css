@@ -1,0 +1,142 @@
+#conteudo {
+  background: grey;
+  padding: 0;
+  margin: 0;
+}
+#conteudo h1 {
+  color: black;
+}
+#conteudo a {
+  color: blue;
+}
+#conteudo a:hover {
+  color: yellow;
+}
+
+#rodape {
+  background-color: #eaa9ac;
+}
+
+h2 {
+  color: #eaa9ac;
+}
+
+.item-1 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.red {
+  color: red;
+}
+
+.item-1 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: #96d1d1;
+  margin-bottom: 2px;
+}
+
+.item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: yellow;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: red;
+  margin-bottom: 2px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  background: #96d1d1;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  background: #96d1d1;
+}
+
+.col-3 {
+  width: 25%;
+  background: #96d1d1;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  background: #96d1d1;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  background: #96d1d1;
+}
+
+.col-6 {
+  width: 50%;
+  background: #96d1d1;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  background: #96d1d1;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  background: #96d1d1;
+}
+
+.col-9 {
+  width: 75%;
+  background: #96d1d1;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  background: #96d1d1;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  background: #96d1d1;
+}
+
+.col-12 {
+  width: 100%;
+  background: #96d1d1;
+}
+
+.alerta {
+  background: #5a5aa6;
+  color: yellow;
+}
+
+.alerta-escuro {
+  background: gray;
+}
+
+/*# sourceMappingURL=estilo.css.map */

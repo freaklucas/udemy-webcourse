@@ -1,0 +1,99 @@
+
+#conteudo{
+    background: grey;
+    padding: 0;
+    margin: 0;
+
+    h1{
+        color: black;   
+    }
+
+    a {
+        color: blue;
+        &:hover {
+            color:yellow;
+        }
+    }
+}
+
+//Variáveis
+
+$cor-primaria: #87cefa;
+$tamanho-titulo: 14px;
+$cor-padrao: black;
+
+
+
+#rodape {
+    $cor-padrao: #eaa9ac !global;
+    background-color: $cor-padrao;
+}
+
+h2{
+   color: $cor-padrao; 
+}
+@for $i from 1  through 3 {
+        .item-#{$i} {
+            background: rgb(150, 209, 209);
+            margin-bottom: 2px;
+        }
+    }
+    
+// interpolação
+
+    $classe: red;
+    $color: color;
+
+
+    .red {
+        #{$color}: $classe;
+    }
+
+    //for
+
+    @for $i from 1  through 3 {
+        .item-#{$i} {
+            background: rgb(150, 209, 209);
+            margin-bottom: 2px;
+        }
+    }
+
+
+// Each
+$lista: green, yellow, red;
+$count: 1;
+
+@each $cor in $lista{
+
+    .item-#{$count} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+    $count: $count + 1;
+}
+
+//funções
+//calculando a largura de cada coluna
+
+$total: 12;
+@function largura-coluna($coluna){
+    @return percentage($coluna/$total);
+}
+@for $i from 1  through $total {
+    .col-#{$i} {
+        width: largura-coluna($i);
+        background: rgb(150, 209, 209);       
+    }
+}
+
+//outras funções
+
+.alerta {
+    background: mix(blue, grey, 30%);
+    color: yellow;
+}
+
+.alerta-escuro {
+    background: darken(white,50% );
+}
+
