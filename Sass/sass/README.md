@@ -1,3 +1,3 @@
-#Realizando a compilação automática para conversão do css:
+# Realizando a compilação automática para conversão do css:
 
-sass --watch sass:css
+## sass --watch sass:css
