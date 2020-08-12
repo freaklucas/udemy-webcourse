@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Mixin */
+h1 {
+  color: white;
+  background: black;
+  padding: 10px 5px;
+}
+
+h2 {
+  color: yellow;
+  background: black;
+  padding: 10px 5px;
+}
+
+/* Herança */
+/* Múltiplas diretivas */
+.classe1, .vermelho {
+  color: red;
+}
+
+.classe2 {
+  color: black;
+}
+
+/* Encadeamento de diretivas */
+.pai, .filho, .erro {
+  color: grey;
+}
+
+.filho, .erro {
+  color: black;
+}
+
+.erro {
+  padding: 10px;
+  border: solid 1px;
+}
+
+/* Placeholder */
+.erro {
+  color: blue;
+}
+
+.erro {
+  background: black;
+}
+
+.erro {
+  padding: 10px;
+}
+
+/* Diretivas de controle */
+p {
+  font-size: 25px;
+}
+
+/* Diretivas de controle e Mixins */
+body {
+  background: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=estilo.css.map */
