@@ -15,4 +15,9 @@ Progressão de conteúdos cursados:
  10) Ajax
  11) Jquery
  12) Padrão de Arquitetura MVC com PHP
+ 13) PHP e Mysql para construção do twitter clone
+ 14) Criação de uma API com Slim
+ 15) SASS
+ 16) Ionic
+ 17) WordPress
  &nbsp;
